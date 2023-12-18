@@ -1,0 +1,272 @@
+    /* Hoja de estilos generales */
+body{
+    background-color: #f4f4f4;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+/* Hoja de estilos de la cabecera */
+#cabecera{
+    background-color: #75d2c1;
+    height: 11vh;
+    width: 100vw;
+    position: fixed;
+    margin-top: -100px;
+    text-decoration: none;
+}
+#estructuraCabecera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    text-decoration: none;
+}
+/* Hoja de estilos de los botones de la cabecera */
+.textoCabecera{
+    background-color: rgb(206, 125, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 16vw;
+    margin: 10px;
+    background: #029678;
+    font-family: inherit;
+    padding: 1.3em 1.6em;
+    font-weight: 900;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    font-family: 'Amiko', sans-serif;
+    text-decoration: none;
+}
+.textoCabecera:hover{
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+    cursor: pointer;
+}
+.textoCabecera:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+/* Hoja de estilos del contenido */
+#contenidoCuartaPagina{
+    height: 120vh;
+    width: 99vw;
+    background-color: #f4f4f4;
+    font-family: 'Amiko', sans-serif;
+}
+#tituloContenido{
+    height: 15vh;
+    width: 90vw;
+    background-color: #04ccac;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px #029678 solid;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+}
+/* Hoja de estilos del formulario de registro */
+#formulario_padre{
+    height: 40vh;
+    width: 40vw;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#formulario_hijo{
+    height: 75vh;
+    width: 40vw;
+    border: 2px black solid;
+    border-radius: 10px;
+    font-family: 'Amiko', sans-serif;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='600' height='600' preserveAspectRatio='none' viewBox='0 0 600 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1038%26quot%3b)' fill='none'%3e%3crect width='600' height='600' x='0' y='0' fill='rgba(117%2c 210%2c 193%2c 1)'%3e%3c/rect%3e%3cpath d='M0 0L267.24 0L0 201.6z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 201.6L267.24 0L322.16 0L0 352.71000000000004z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 352.71000000000004L322.16 0L343.5 0L0 484.48z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 484.48L343.5 0L408.75 0L0 541.07z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M600 600L561.09 600L600 472.64z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M600 472.64L561.09 600L506.74 600L600 254.77999999999997z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M600 254.77999999999997L506.74 600L303.02 600L600 236.43999999999997z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M600 236.44L303.02 600L210.75 600L600 195.85z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1038'%3e%3crect width='600' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+/* Hoja de estilos del contenedor del formulario de registro */
+.input-container {
+    position: relative;
+    margin: 50px auto;
+    width: 200px;
+}
+.input-container input[type="text"] {
+    font-size: 20px;
+    color: rgb(43, 43, 43);
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #171616;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #151515;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+    top: -20px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+} 
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #1f1e1e;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+    transform: scaleX(1);
+}
+/* Hoja de estilos del botón de enviar */
+#boton_enviar_contorno{
+    margin-left: 235px;
+    margin-top: -20px;
+}
+#boton_enviar{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background:#5dc1b9;
+    color: ghostwhite;
+}
+#boton_enviar span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+#boton_enviar:hover span {
+    color: black;
+} 
+#boton_enviar::before,
+#boton_enviar::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}   
+#boton_enviar::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+#boton_enviar:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+/* Hoja de estilos del pie de página */
+#pieDePagina{
+    background-color: #f4f4f4;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Amiko', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='360' preserveAspectRatio='none' viewBox='0 0 1920 360'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1060%26quot%3b)' fill='none'%3e%3crect width='1920' height='360' x='0' y='0' fill='rgba(244%2c 244%2c 244%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c65 C 38.4%2c70.6 115.2%2c94.2 192%2c93 C 268.8%2c91.8 307.2%2c48.6 384%2c59 C 460.8%2c69.4 499.2%2c143.4 576%2c145 C 652.8%2c146.6 691.2%2c74.4 768%2c67 C 844.8%2c59.6 883.2%2c109.4 960%2c108 C 1036.8%2c106.6 1075.2%2c56.6 1152%2c60 C 1228.8%2c63.4 1267.2%2c136.2 1344%2c125 C 1420.8%2c113.8 1459.2%2c-5 1536%2c4 C 1612.8%2c13 1651.2%2c163.8 1728%2c170 C 1804.8%2c176.2 1881.6%2c62 1920%2c35L1920 360L0 360z' fill='rgba(117%2c 210%2c 193%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c217 C 48%2c245.2 144%2c350.4 240%2c358 C 336%2c365.6 384%2c270 480%2c255 C 576%2c240 624%2c293.4 720%2c283 C 816%2c272.6 864%2c196.4 960%2c203 C 1056%2c209.6 1104%2c319.8 1200%2c316 C 1296%2c312.2 1344%2c177.2 1440%2c184 C 1536%2c190.8 1584%2c348 1680%2c350 C 1776%2c352 1872%2c225.2 1920%2c194L1920 360L0 360z' fill='rgba(117%2c 210%2c 193%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1060'%3e%3crect width='1920' height='360' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+.container {
+    position:relative;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+.container button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #313638;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.icon {
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+}
+.container button:nth-child(1):hover {
+    background-color: #2753a7;
+} 
+.container button:nth-child(2):hover {
+    background-color: #cd242b;
+}
+.container button:nth-child(3):hover {
+    background-color: #55acee;
+} 
+.container button:nth-child(4):hover {
+    background-color: #0274b3;
+}
+.title {
+    color: gray;
+    font-weight: 700;
+    font-size: 17px;
+    position: absolute; 
+    top: -35px;
+    left: -14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Hoja de estilos para que sea responsive */
+@media (max-width: 720px) {
+    .html{
+        width: 50%;
+    }
+    .textoCabecera{
+        font-size: 10px;
+        text-align: center;
+    }
+    #tituloContenido{
+        text-align: center;
+        font-size: 15px;
+    }
+    #contenidoCuartaPagina{
+        height: 100vh;
+    }
+    #formulario_hijo{
+        height: 65vh;
+        width: 80vw;
+        margin-left: -75px;
+        margin-right: auto;
+    }
+    #boton_enviar_contorno{
+        margin-left: 100px; 
+        margin-right: auto; 
+    }
+}
